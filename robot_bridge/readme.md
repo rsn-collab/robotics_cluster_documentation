@@ -15,8 +15,8 @@ module load tacc-apptainer/1.4.1
 
 1. Pull docker image using apptainer.
 
-[!Caution]
-This points to a docker image registered on Tanay's dockerhub. If you want to make changes then modify the Dockerfile and push it to your own Dockerhub using `docker push`
+> [!CAUTION]
+> This points to a docker image registered on Tanay's dockerhub. If you want to make changes then modify the Dockerfile and push it to your own Dockerhub using `docker push`
 
 ```bash
 apptainer pull $WORK/ros_gazebo.sif docker://tanay575/dockwater:humble
