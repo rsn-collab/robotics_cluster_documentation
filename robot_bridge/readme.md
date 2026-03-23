@@ -13,7 +13,7 @@ Assuming you are on a compute node (see `idev` instructions in the main readme)
 module load tacc-apptainer/1.4.1
 ```
 
-1. Pull docker image using apptainer.
+2. Pull docker image using apptainer.
 
 > [!CAUTION]
 > This points to a docker image registered on Tanay's dockerhub. If you want to make changes then modify the Dockerfile and push it to your own Dockerhub using `docker push`
@@ -22,7 +22,7 @@ module load tacc-apptainer/1.4.1
 apptainer pull $WORK/ros_gazebo.sif docker://tanay575/dockwater:humble
 ```
 
-1. Enter a tmux session and launch the Apptainer container
+3. Enter a tmux session and launch the Apptainer container
 
 ```bash
 
