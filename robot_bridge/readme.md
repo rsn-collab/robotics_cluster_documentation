@@ -29,4 +29,15 @@ apptainer pull $WORK/ros_gazebo.sif docker://tanay575/dockwater:humble
 bash robot_bridge/launch_apptainer.sh
 ```
 
+4. To launch the simulation:
+
+```bash
+ROSBAG_RECORD=true bash run_vrx_sydney.sh
+```
+To play an existing rosbag:
+
+```bash
+ROSBAG_PLAY=/output/rosbags/vrx_20260322_1500 bash run_vrx_sydney.sh
+```
+
 This should do the job of either launching the container or joining an already running container.
